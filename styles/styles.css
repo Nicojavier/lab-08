@@ -1,0 +1,26 @@
+body{
+    --sizecard: 300px;
+}
+
+.container  {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    gap: 20px;
+}
+
+.card  {
+    width: var(--sizecard);
+    box-shadow: 0 4px 8px 0 gray;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.card-body  {
+    padding: 2px 16px;
+}
+
+.card img  {
+    border-radius: 5px 5px 0px 0px;
+    width: var(--sizecard);
+}
