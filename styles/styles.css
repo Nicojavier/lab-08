@@ -1,5 +1,6 @@
 body{
     --sizecard: 300px;
+    margin-top: 30px;
 }
 
 .container  {
@@ -12,8 +13,13 @@ body{
 .card  {
     width: var(--sizecard);
     box-shadow: 0 4px 8px 0 gray;
-    transition: 0.3s;
+    transition: 0.7s;
     border-radius: 5px;
+    opacity: 15%;
+
+    &:hover{
+        opacity: 100%;
+        }
 }
 
 .card-body  {
