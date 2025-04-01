@@ -1,6 +1,6 @@
 body{
     --sizecard: 300px;
-    margin-top: 30px;
+    margin: 30px 0px 0px 0px;
 }
 
 .container  {
@@ -12,10 +12,11 @@ body{
 
 .card  {
     width: var(--sizecard);
-    box-shadow: 0 4px 8px 0 gray;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 black;
     transition: 0.7s;
     border-radius: 5px;
-    opacity: 15%;
+    opacity: 20%;
 
     &:hover{
         opacity: 100%;
@@ -39,3 +40,28 @@ body{
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* FONDO */
+body {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: -1;
+    background: linear-gradient(45deg, red, blue, green, yellow);
+    background-size: 400% 400%;
+    animation: gradienteAnimacion 10s ease infinite;
+    
+}
+
+@keyframes gradienteAnimacion {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
